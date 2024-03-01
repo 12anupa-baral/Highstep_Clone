@@ -47,9 +47,33 @@
     border-top: 3px solid #8FB63F;
 }
 
-.hero {
+.hero__bg {
     background-image: linear-gradient(to bottom left, #8FB63F, #005374, #000000);
     height: 100vh;
+    z-index: -100;
+}
+
+#img__left {
+    padding-top: 10px;
+    width: 503px;
+    margin-left: -170px;
+
+}
+
+#img__right {
+    padding-top: 10px;
+    width: 503px;
+    margin-left: 678px;
+
+}
+
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 @media screen and (max-width: 800px) {
