@@ -10,7 +10,7 @@
     position: absolute;
     display: flex;
     padding: 20px;
-    gap: 550px;
+    justify-content: space-between;
     background-color: white;
     width: 100%;
 }
@@ -37,7 +37,7 @@
 
 }
 
-.fa-solid {
+.fa-bars {
     display: none;
 
 }
@@ -47,36 +47,131 @@
     border-top: 3px solid #8FB63F;
 }
 
+.hero {
+    margin-bottom: 10px;
+}
+
 .hero__bg {
     background-image: linear-gradient(to bottom left, #8FB63F, #005374, #000000);
+    width: 100%;
     height: 100vh;
     z-index: -100;
 }
 
+.hero__img {
+    display: flex;
+    justify-content: space-between;
+}
+
 #img__left {
+    width: 100%;
     padding-top: 10px;
-    width: 503px;
+    max-width: 503px;
     margin-left: -170px;
 
 }
 
 #img__right {
+    width: 100%;
     padding-top: 10px;
-    width: 503px;
-    margin-left: 678px;
+    max-width: 503px;
+    margin-left: 847px;
 
 }
 
 
 h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 500px;
+    width: 65%;
+    text-align: right;
     color: white;
+    font-size: 10vh;
+    font-weight: 600;
 }
 
-@media screen and (max-width: 800px) {
+.hero__info {
+    position: absolute;
+    top: 55%;
+    font-weight: 200;
+    width: 70%;
+    left: 400px;
+    text-align: right;
+    color: white;
+    font-size: 8vh;
+}
+
+.hero__btn {
+    position: absolute;
+    bottom: 5%;
+    width: 65%;
+    left: 500px;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: none;
+}
+
+/* Product */
+.product {
+    display: flex;
+    justify-content: space-around;
+    padding: 20 20 0 20;
+    border-bottom: 1px solid #8FB63F;
+    margin-bottom: 10px;
+}
+
+.product__info {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.product__details {
+    width: 35%;
+    padding: 50px 0px;
+}
+
+.product__details p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 2%;
+}
+
+.product__details h3 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 47px;
+}
+
+.product__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 1px solid black;
+}
+
+.product__btns i {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+
+}
+
+.product__img img {
+    padding: 30px 0px;
+    width: 100%;
+    max-width: 566px;
+}
+
+/* ipad */
+@media screen and (max-width: 1680px) {
     .top__element ul {
         display: none;
     }
@@ -86,10 +181,22 @@ h1 {
 
     }
 
+    .hero__bg {
+        height: 70vh;
+    }
+
+    .top {
+        justify-content: space-around;
+    }
+
     .top__element ul.show {
+        position: absolute;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        background-color: white;
+        padding: 10px 20px;
+        z-index: 10;
     }
 
     .top__element li {
@@ -97,7 +204,100 @@ h1 {
     }
 
     .top {
-        gap: 400px;
         padding-right: 20px;
+    }
+
+    .hero__img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #img__left {
+        width: 100%;
+        padding-top: 10px;
+        max-width: 300px;
+        margin-left: -130px;
+
+    }
+
+    #img__right {
+        width: 100%;
+        padding-top: 10px;
+        max-width: 300px;
+        margin-left: -100px;
+
+    }
+
+    h1 {
+        top: 25%;
+        left: 10px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 5vw;
+    }
+
+    .hero__info {
+        top: 40%;
+        width: 100%;
+        left: 10px;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .hero__btn {
+        top: 60%;
+        left: 20%;
+        text-align: center;
+
+    }
+
+}
+
+/* mobile */
+
+@media screen and (max-width: 400px) {
+    #img__left {
+        max-width: 150px;
+        margin-left: -50px;
+
+    }
+
+    #img__right {
+        max-width: 150px;
+        margin-left: -100px;
+
+
+    }
+
+    h1 {
+        top: 18%;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 5vw;
+    }
+
+    .hero__info {
+        top: 30%;
+        width: 100%;
+        left: 0px;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .hero__btn {
+        top: 40%;
+        font-size: 12px;
+    }
+
+    .hero__bg {
+        height: 50vh;
+    }
+
+
+    .top__element ul.show {
+        padding: 10px 5px;
     }
 }
