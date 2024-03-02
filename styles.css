@@ -79,7 +79,7 @@
     width: 100%;
     padding-top: 10px;
     max-width: 503px;
-    margin-left: 847px;
+    margin-left: 680px;
 
 }
 
@@ -88,7 +88,7 @@ h1 {
     position: absolute;
     top: 15%;
     left: 500px;
-    width: 65%;
+    width: 60%;
     text-align: right;
     color: white;
     font-size: 10vh;
@@ -99,8 +99,8 @@ h1 {
     position: absolute;
     top: 55%;
     font-weight: 200;
-    width: 70%;
-    left: 400px;
+    width: 65%;
+    left: 410px;
     text-align: right;
     color: white;
     font-size: 8vh;
@@ -110,7 +110,7 @@ h1 {
     position: absolute;
     bottom: 5%;
     width: 65%;
-    left: 500px;
+    left: 400px;
     text-align: right;
     color: white;
     font-weight: bold;
@@ -237,7 +237,7 @@ h1 {
 .success__stories {
     display: flex;
     justify-content: space-between;
-    margin-top: -5px;
+    margin-top: -40px;
 }
 
 .success__stories__content {
@@ -247,30 +247,27 @@ h1 {
     color: white;
     width: 40%;
 
-
 }
 
 #content1,
 #content2 {
     background-color: #27697E;
-
 }
 
 #content3,
 #content4 {
     background-color: #688C3D;
-
 }
 
 .success__stories__image img {
-    width: 1140px;
+    width: 1000px;
     object-fit: full;
 
 }
 
 .success__title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .success__title h2 {
@@ -296,6 +293,7 @@ h1 {
 .success__stories__content a {
     text-decoration: none;
     font-size: 1.2vm;
+    margin-top: 30px;
     font-weight: 900;
     color: white;
 
@@ -303,7 +301,7 @@ h1 {
 
 
 /* ipad */
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1300px) {
 
     .container {
         padding: 10px 50px;
