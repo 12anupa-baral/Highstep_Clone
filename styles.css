@@ -531,19 +531,22 @@ input {
 .final__note {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
-    padding: 30px;
-    background-color: #3f00c8;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
 
 }
 
 .final__info {
     width: 40%;
-    /* background-color: #252122; */
+    padding: 30px 100px;
+
+
 }
 
 .final__info p {
-    width: 60%;
+    width: 100%;
+    color: #8D8D8D;
 }
 
 .final__links li {
@@ -551,15 +554,32 @@ input {
 
 }
 
+.final__links :nth-child(1) {
+    color: #8D8D8D;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+}
+
 .final__right {
+    border-left: 1px solid black;
     display: flex;
-    justify-content: space-between;
-    /* gap: 300px; */
+    justify-content: space-around;
+    gap: 400px;
+    padding: 30px 150px;
 
 }
 
 .final__socials {
     display: flex;
+    gap: 10px;
+}
+
+/* copyright */
+
+.copyright {
+    margin-bottom: 20px;
+    color: #8D8D8D;
 }
 
 
