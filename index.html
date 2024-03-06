@@ -4,10 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="https://kit.fontawesome.com/7ebf885f4c.js" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script src="https://kit.fontawesome.com/7ebf885f4c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slick/slick.css">
     <title>Document</title>
 </head>
 
@@ -30,6 +40,7 @@
                             <li><a href="#">Careers</a></li>
                             <li><a href="#">Products</a></li>
                             <li><a href="#">Support</a></li>
+                            <li><a href="#"><img src="assets/Group 154.png" alt=""></a></li>
                             <li>
                                 <div class="hamburger"></div>
                             </li>
@@ -42,16 +53,26 @@
     <main>
         <!-- hero -->
         <section class="hero">
+            <div class="hero__talk__btn">
+                <a href="">Let's talk</a>
+            </div>
             <div class="hero__bg">
-                <h1>Modern Software Solutions for the
-                    Construction and Utilities Industries</h1>
-                <p class="hero__info">Highstep is trusted by leading companies for world-class solutions that improves
-                    productivity,
-                    profitability and efficiency.</p>
-                <div class="hero__btn">
-                    <p class="btn">Book a Discovery Call<span> <i class="fa-solid fa-arrow-right"></i></span></p>
 
+                <div class="hero__info">
+                    <div class="container">
+                        <h1 class="hero__title">Modern Software Solutions for the
+                            Construction and Utilities Industries</h1>
+                        <p class="hero__description">Highstep is trusted by leading companies for world-class solutions
+                            that
+                            improves
+                            productivity,
+                            profitability and efficiency.</p>
+                        <div class="hero__btn">
+                            <a href="">Book a Discovery Call</a>
+                            <i class="fa-solid fa-arrow-right"></i>
 
+                        </div>
+                    </div>
                 </div>
                 <div class="hero__img">
                     <img id="img__left" src="assets/Group 283.png" alt="vector">
@@ -242,6 +263,26 @@
                             </div>
 
                         </div>
+
+                        <div class="clients__says1">
+                            <p>"When faced with several crucial issues, the Brent Material staff was left with zero
+                                access to their aging ERP system and its database of stored information. Highstep was
+                                able to develop a solution that recovered this information allowing the company’s
+                                internal operations to continue running uninterrupted. It is always a pleasure to work
+                                with Garett and his team as they bring so much value with their work."</p>
+                            <div>
+                                <div class="client__bio">
+                                    <div class="client__image">
+                                        <img src="assets/Linda_Gardner-150x150 1.png" alt="clients">
+                                    </div>
+                                    <div class="client__position">
+                                        <h3>Chris Colabella</h3>
+                                        <p>President, Construction Information Systems Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -305,6 +346,22 @@
                                 bags/straws...</div>
                             <div class="blog__read"> <a href="#">Read Article</a></div>
                         </div>
+
+                        <div class="blog__content">
+                            <div class="blog_-date">
+                                <p>Posted on March 20, 2020</p>
+                            </div>
+                            <div class="blog__image">
+                                <img src="assets/adam-winger--THiqda3iGM-unsplash 4.png" alt="">
+                            </div>
+                            <div class="blog__heading">Support of the Small
+                                Business</div>
+                            <div class="blog__info">Supporting a small business is as big a trend as getting rid of
+                                plastic
+                                bags/straws...</div>
+                            <div class="blog__read"> <a href="#">Read Article</a></div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -334,8 +391,15 @@
                     <div class="foot__info">
                         <h2>What's new at Highstep</h2>
                         <p>Get the latest news about artificial intelligence and green building.</p>
-                        <input type="text" placeholder="Your email">
+                        <div class="email">
+                            <input type="text" placeholder="Your email">
+                            <div class="email__arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+
+                        </div>
                     </div>
+
                     <div class="foot__links">
                         <div class="foot__link1">
                             <ul>
@@ -363,6 +427,7 @@
         </footer>
 
         <section class="final__section">
+
             <div class="final__note">
                 <div class="final__info">
                     <p>From banking to energy to construction, Highstep’s track record proves that any industry can
@@ -381,8 +446,8 @@
                         <i class='fa fa-facebook'></i>
                     </div>
                 </div>
-
             </div>
+
         </section>
 
         <section>
@@ -395,7 +460,11 @@
             </div>
         </section>
     </main>
+
+    <script src="slick/slick.js"></script>
     <script src="script.js"></script>
+
+
 </body>
 
 </html>

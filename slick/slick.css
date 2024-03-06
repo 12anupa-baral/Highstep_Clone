@@ -1,0 +1,10 @@
+.slick-prev,
+.slick-next {
+    display: none !important;
+    height: fit-content;
+
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
